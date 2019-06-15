@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import New from './New';
+import PropTypes from 'prop-types';
 
 class News extends Component {
     render() {
@@ -17,3 +18,7 @@ class News extends Component {
 }
 
 export default News;
+
+News.propType = {
+    news: PropTypes.object.isRequired
+}

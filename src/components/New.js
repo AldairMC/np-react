@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 const New = (props) => {
     
@@ -24,3 +25,7 @@ const New = (props) => {
 };
 
 export default New;
+
+New.propType = {
+    new: PropTypes.object.isRequired
+}

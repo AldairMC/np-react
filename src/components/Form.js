@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Form extends Component {
     
@@ -40,3 +41,7 @@ class Form extends Component {
 }
 
 export default Form;
+
+Form.propType = {
+    getNews: PropTypes.func.isRequired
+}
