@@ -11,8 +11,9 @@ const Header = (props) => {
     );
 };
 
-export default Header;
-
 Header.propType = {
     titulo: PropTypes.string.isRequired
 }
+
+export default Header;
+

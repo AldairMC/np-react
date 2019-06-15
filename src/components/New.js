@@ -24,8 +24,15 @@ const New = (props) => {
     );
 };
 
+New.propType = {
+    new: PropTypes.shape({
+        url: PropTypes.string,
+        urlToImage: PropTypes.string,
+        description: PropTypes.string,
+        title: PropTypes.string,
+        source: PropTypes.object,
+    })
+}
+
 export default New;
 
-New.propType = {
-    new: PropTypes.object.isRequired
-}
